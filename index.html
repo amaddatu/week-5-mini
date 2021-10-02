@@ -21,32 +21,15 @@
         <h1>
           Skills List
         </h1>
+        <h2 id="timer-container">
+          Test Time
+        </h2>
       </div>
     </div>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-6">
-          <h3>Skills Form</h3>
-          <br />
-          <form id="skills-form">
-            <div class="form-group row">
-              <label for="skill" class="col-sm-4 col-form-label"
-                >Skill Name:
-              </label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="skill-name" />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="date" class="col-sm-4 col-form-label">Date: </label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="datepicker" autocomplete="off" />
-              </div>
-            </div>
-            <button type="submit" value="Submit" class="btn btn-info">
-              Submit
-            </button>
-          </form>
+        <div class="col-3">
+          <button id="opener">Test</button>
         </div>
         <div class="col-6">
           <h3>List of Skills:</h3>
@@ -55,10 +38,48 @@
         </div>
       </div>
     </div>
+    <div id="dialog" class="custom-dialog">
+      <h3>Skills Form</h3>
+      <br />
+      <form id="skills-form">
+        <div class="form-group row">
+          <label for="skill" class="col-sm-4 col-form-label">Project Name:
+          </label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="skill-name" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="date" class="col-sm-4 col-form-label">Due Date: </label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="datepicker" autocomplete="off" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="project-type" class="col-sm-4 col-form-label">Project Type: </label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="project-type" autocomplete="off" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="rate" class="col-sm-4 col-form-label">Hourly Rate: </label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="rate" autocomplete="off" />
+          </div>
+        </div>
+        <button type="submit" value="Submit" class="btn btn-info">
+          Submit
+        </button>
+      </form>
+    </div>
   </body>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <!-- Apply jQuery UI <script> tag here -->
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
   <script src="./assets/js/script.js"></script>
 </html>
